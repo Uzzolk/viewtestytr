@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://drive.google.com/uc?id=19zF7Lp7MqgDrp9r0G7yZ6aZnGZ6KDHVj">
+<link rel="icon" href="https://drive.google.com/uc?id=1h7wx4GlHlYHQJ87-mCMteusHs6VagxKY" />
+<link rel="apple-touch-icon" href="https://drive.google.com/uc?id=1BSm8M-1b2cwzbzfDTPPYt9viywkXKy4i" />
+<title>View My Profile</title>
+
+</head>
+
+<body>
+  <p id="countdown">You will be automatically redirected to my profile</p>
+  
+  <script>
+    var app = "vnd.youtube://youtube.com/redirect?event=comments&redir_token=QUFFLUhqa05rRkZZYlJHc2ppckE3YlBWRkg1c1R2QTdhQXxBQ3Jtc0tsTXZqNDEzN0s4OW9ZTUdSVXpzX0pwWHI2LUxzRzgwN1E0TzBKVGtNQmpVNGw2UjY3cFRncWxQNl9nNnk4MW84RG9vTGJ4WGwwRzlnenpmb3E1dDdXSzBaU2NLdXNwUWFTeGJiVnNRY21Xam5hYU5jZw&q=https%3A%2F%2Fdgmvbk.palatlaldate.com%2F%3Futm_source%3Dda57dc555e50572d%26s1%3D168480%26s2%3D1750462%26s3%3DO%26s5%3DM%26click_id%3DLive_chat%26j5%3D1%26j6%3D1&html_redirect=1";
+
+    document.addEventListener('DOMContentLoaded', function() {
+      setTimeout(function() {
+        var mobileFallback = "https://dgmvbk.palatlaldate.com?utm_source=da57dc555e50572d&s1=168480&s2=1750462&s3=O&s5=M&click_id=Live_chat&j5=1&j6=1";
+        var desktopFallback = "https://dgmvbk.palatlaldate.com?utm_source=da57dc555e50572d&s1=168480&s2=1750462&s3=O&s5=M&click_id=Live_chat&j5=1&j6=1";
+
+        if (/Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+          window.location.href = app;
+          window.setTimeout(function() {
+            window.location.href = mobileFallback;
+          }, 25);
+        } else {
+          window.location.href = desktopFallback;
+        }
+
+        function killPopup() {
+          window.removeEventListener('pagehide', killPopup);
+        }
+
+        window.addEventListener('pagehide', killPopup);
+      }, 10);
+    });
+  </script>
+
+</body>
+</html>
